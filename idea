@@ -1,0 +1,84 @@
+vaig per
+http://floppsie.comp.glam.ac.uk/Glamorgan/gaius/web/pic-9.html
+
+
+Object	Default Size
+
+box	0.75 wide 0.5 hight
+circle	0.5 diameter
+ellipse	0.75 wide 0.5 hight
+arc	0.5 radius
+line	0.5 long
+arrow	0.5 long
+move	0.5 long
+
+
+? scale
+
+	up
+left		right
+	down
+
+arc cw
+	cw
+	rad	\d
+
+	- wid width, ht height -
+box wid 3 ht 8
+
+circular
+rad	radius
+diam	diameter
+
+thickness	espesor de les linies.. 
+thick
+
+
+No he aconseguit possar colors... // diu que no es compatible amb el latex el manual
+http://floppsie.comp.glam.ac.uk/Glamorgan/gaius/web/pic-6.html
+	colour, colored, coloured, and outlined.
+
+==================================================
+box
+	wit	\d
+	ht	\d
+	dashed	[\d]		- - - -
+	dotted	[\d]		. . . .
+	thickness
+	thick	[\d]		[0, +∞) 0 lo mes fi que pot, mes gran, linies mes groses
+
+	fillval	??		??
+	fill	[\d]		[0-1] 0 blanc, 1 negre
+circle
+	rad	\d
+	diam	\d
+ellipse	-box-
+arc
+	cw
+	rad	\d
+arrow
+	then	up left right down...
+	up	[\d, 0.5]
+	left	[\d, 0.5]
+	right	[\d, 0.5]
+	down	[\d, 0.5]
+line	-arrow-
+	->
+		wid
+		ht
+	<->
+		wid
+		ht
+arrow	-arrow-
+move	-arrow-
+spline	-arrow-
+	->	per dibuixar una fletxa
+down
+same		- repet te last -
+
+---
+cw	-
+wid	\d
+ht	\d
+rad	\d
+diam	\d
